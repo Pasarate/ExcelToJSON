@@ -2,220 +2,280 @@ package com.drive.google;
 
 public class LEADS_POJO {
 
-    private String[] projectName;
-    private String[] projectType;
-    private String[] description;
-    private String[] sqft;
-    private String[] estimatedProjectCost;
-    private String[] permitNumber;
-    private String[] noticeType;
-    private String[] street;
-    private String[] city;
-    private String[] state;
-    private String[] zipcode;
-    private String[] contactInfo;
-    private String[] contactPhone;
-    private String[] contactAddress;
-    private String[] contactEmail;
-    private String[] owner;
-    private String[] architect;
-    private String[] applicationDate;
-    private String[] uploadDate;
-    private String[] status;
-    private String[] closeDate;
-    private String[] link;
-    private String[] source;
-    private String[] constructionStartDate;
+    public LEADS_POJO() {
+    }
 
-    public String[] getProjectName() {
+    public LEADS_POJO(String projectName, String projectType, String description, String sqft, String estimatedProjectCost, String permitNumber, String noticeType, String street, String city, String state, String zipcode, String contactInfo, String contactPhone, String contactAddress, String contactEmail, String owner, String architect, String applicationDate, String uploadDate, String status, String closeDate, String link, String source, int constructionStartDate) {
+        this.projectName = projectName;
+        this.projectType = projectType;
+        this.description = description;
+        this.sqft = sqft;
+        this.estimatedProjectCost = estimatedProjectCost;
+        this.permitNumber = permitNumber;
+        this.noticeType = noticeType;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.zipcode = zipcode;
+        this.contactInfo = contactInfo;
+        this.contactPhone = contactPhone;
+        this.contactAddress = contactAddress;
+        this.contactEmail = contactEmail;
+        this.owner = owner;
+        this.architect = architect;
+        this.applicationDate = applicationDate;
+        this.uploadDate = uploadDate;
+        this.status = status;
+        this.closeDate = closeDate;
+        this.link = link;
+        this.source = source;
+        this.constructionStartDate = constructionStartDate;
+    }
+
+    private String projectName;
+    private String projectType;
+    private String description;
+    private String sqft;
+    private String estimatedProjectCost;
+    private String permitNumber;
+    private String noticeType;
+    private String street;
+    private String city;
+    private String state;
+    private String zipcode;
+    private String contactInfo;
+    private String contactPhone;
+    private String contactAddress;
+    private String contactEmail;
+    private String owner;
+    private String architect;
+    private String applicationDate;
+    private String uploadDate;
+    private String status;
+    private String closeDate;
+    private String link;
+    private String source;
+    private int constructionStartDate;
+
+    public String getProjectName() {
         return projectName;
     }
 
-    public void setProjectName(String[] projectName) {
+    public void setProjectName(String projectName) {
         this.projectName = projectName;
     }
 
-    public String[] getProjectType() {
+    public String getProjectType() {
         return projectType;
     }
 
-    public void setProjectType(String[] projectType) {
+    public void setProjectType(String projectType) {
         this.projectType = projectType;
     }
 
-    public String[] getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(String[] description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
-    public String[] getSqft() {
+    public String getSqft() {
         return sqft;
     }
 
-    public void setSqft(String[] sqft) {
+    public void setSqft(String sqft) {
         this.sqft = sqft;
     }
 
-    public String[] getEstimatedProjectCost() {
+    public String getEstimatedProjectCost() {
         return estimatedProjectCost;
     }
 
-    public void setEstimatedProjectCost(String[] estimatedProjectCost) {
+    public void setEstimatedProjectCost(String estimatedProjectCost) {
         this.estimatedProjectCost = estimatedProjectCost;
     }
 
-    public String[] getPermitNumber() {
+    public String getPermitNumber() {
         return permitNumber;
     }
 
-    public void setPermitNumber(String[] permitNumber) {
+    public void setPermitNumber(String permitNumber) {
         this.permitNumber = permitNumber;
     }
 
-    public String[] getNoticeType() {
+    public String getNoticeType() {
         return noticeType;
     }
 
-    public void setNoticeType(String[] noticeType) {
+    public void setNoticeType(String noticeType) {
         this.noticeType = noticeType;
     }
 
-    public String[] getStreet() {
+    public String getStreet() {
         return street;
     }
 
-    public void setStreet(String[] street) {
+    public void setStreet(String street) {
         this.street = street;
     }
 
-    public String[] getCity() {
+    public String getCity() {
         return city;
     }
 
-    public void setCity(String[] city) {
+    public void setCity(String city) {
         this.city = city;
     }
 
-    public String[] getState() {
+    public String getState() {
         return state;
     }
 
-    public void setState(String[] state) {
+    public void setState(String state) {
         this.state = state;
     }
 
-    public String[] getZipcode() {
+    public String getZipcode() {
         return zipcode;
     }
 
-    public void setZipcode(String[] zipcode) {
+    public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
 
-    public String[] getContactInfo() {
+    public String getContactInfo() {
         return contactInfo;
     }
 
-    public void setContactInfo(String[] contactInfo) {
+    public void setContactInfo(String contactInfo) {
         this.contactInfo = contactInfo;
     }
 
-    public String[] getContactPhone() {
+    public String getContactPhone() {
         return contactPhone;
     }
 
-    public void setContactPhone(String[] contactPhone) {
+    public void setContactPhone(String contactPhone) {
         this.contactPhone = contactPhone;
     }
 
-    public String[] getContactAddress() {
+    public String getContactAddress() {
         return contactAddress;
     }
 
-    public void setContactAddress(String[] contactAddress) {
+    public void setContactAddress(String contactAddress) {
         this.contactAddress = contactAddress;
     }
 
-    public String[] getContactEmail() {
+    public String getContactEmail() {
         return contactEmail;
     }
 
-    public void setContactEmail(String[] contactEmail) {
+    public void setContactEmail(String contactEmail) {
         this.contactEmail = contactEmail;
     }
 
-    public String[] getOwner() {
+    public String getOwner() {
         return owner;
     }
 
-    public void setOwner(String[] owner) {
+    public void setOwner(String owner) {
         this.owner = owner;
     }
 
-    public String[] getArchitect() {
+    public String getArchitect() {
         return architect;
     }
 
-    public void setArchitect(String[] architect) {
+    public void setArchitect(String architect) {
         this.architect = architect;
     }
 
-    public String[] getApplicationDate() {
+    public String getApplicationDate() {
         return applicationDate;
     }
 
-    public void setApplicationDate(String[] applicationDate) {
+    public void setApplicationDate(String applicationDate) {
         this.applicationDate = applicationDate;
     }
 
-    public String[] getUploadDate() {
+    public String getUploadDate() {
         return uploadDate;
     }
 
-    public void setUploadDate(String[] uploadDate) {
+    public void setUploadDate(String uploadDate) {
         this.uploadDate = uploadDate;
     }
 
-    public String[] getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(String[] status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    public String[] getCloseDate() {
+    public String getCloseDate() {
         return closeDate;
     }
 
-    public void setCloseDate(String[] closeDate) {
+    public void setCloseDate(String closeDate) {
         this.closeDate = closeDate;
     }
 
-    public String[] getLink() {
+    public String getLink() {
         return link;
     }
 
-    public void setLink(String[] link) {
+    public void setLink(String link) {
         this.link = link;
     }
 
-    public String[] getSource() {
+    public String getSource() {
         return source;
     }
 
-    public void setSource(String[] source) {
+    public void setSource(String source) {
         this.source = source;
     }
 
-    public String[] getConstructionStartDate() {
+    public int getConstructionStartDate() {
         return constructionStartDate;
     }
 
-    public void setConstructionStartDate(String[] constructionStartDate) {
+    public void setConstructionStartDate(int constructionStartDate) {
         this.constructionStartDate = constructionStartDate;
+    }
+
+    @Override
+    public String toString() {
+        return "LEADS_POJO{" +
+                "projectName='" + projectName + '\'' +
+                ", projectType='" + projectType + '\'' +
+                ", description='" + description + '\'' +
+                ", sqft='" + sqft + '\'' +
+                ", estimatedProjectCost='" + estimatedProjectCost + '\'' +
+                ", permitNumber='" + permitNumber + '\'' +
+                ", noticeType='" + noticeType + '\'' +
+                ", street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                ", contactInfo='" + contactInfo + '\'' +
+                ", contactPhone='" + contactPhone + '\'' +
+                ", contactAddress='" + contactAddress + '\'' +
+                ", contactEmail='" + contactEmail + '\'' +
+                ", owner='" + owner + '\'' +
+                ", architect='" + architect + '\'' +
+                ", applicationDate='" + applicationDate + '\'' +
+                ", uploadDate='" + uploadDate + '\'' +
+                ", status='" + status + '\'' +
+                ", closeDate='" + closeDate + '\'' +
+                ", link='" + link + '\'' +
+                ", source='" + source + '\'' +
+                ", constructionStartDate=" + constructionStartDate +
+                '}';
     }
 }
