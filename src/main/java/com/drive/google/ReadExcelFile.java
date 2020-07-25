@@ -1,5 +1,11 @@
 package com.drive.google;
 
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -14,19 +20,16 @@ import java.util.Iterator;
 import java.util.List;
 
 
-
 public class ReadExcelFile {
 
     public static void main(String[] args) throws IOException {
         String path = System.getProperty("user.dir") + "\\src\\main\\Resource\\leads.xlsx";
         List<LEADS_POJO> leads_pojo = readExcelFIle(path);
 
+        ObjectMapper mapper = new ObjectMapper();
+        String jsonString = mapper.writeValueAsString(leads_pojo);
+        System.out.println(jsonString);
 
-
-
-
-
-        System.out.println(leads_pojo.toString());
     }
 
 
