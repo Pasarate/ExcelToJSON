@@ -2,10 +2,6 @@ package com.drive.google;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -31,7 +27,6 @@ public class ReadExcelFile {
         System.out.println(jsonString);
 
     }
-
 
     private static List<LEADS_POJO> readExcelFIle(String path) throws IOException {
 
